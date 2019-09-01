@@ -84,7 +84,7 @@ func (spec *ViewCmdSpec) Validate(ctx AppContext, name string, root *Spec) bool 
 	}
 	contract, ok := root.Contracts.ContractSpec(spec.Instance.Name)
 	if !ok || contract == nil {
-		validateLog.Errorf("the target contract spec not found (name mismatch), for contract %+v", spec.Instance.Name)
+		validateLog.Errorf("the target contract spec not found (name mismatch), for contract %+v, spec.Instance: %+v, spec: %+v", spec.Instance.Name, spec.Instance, spec)
 		return false
 	} else if len(contract.Instances) == 0 {
 		validateLog.Errorln("the target contract spec has no instances")
