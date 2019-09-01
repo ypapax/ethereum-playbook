@@ -3,7 +3,7 @@ package executor
 import (
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/AtlantPlatform/ethereum-playbook/model"
+	"github.com/ypapax/ethereum-playbook/model"
 )
 
 func (e *Executor) runCallCmd(ctx model.AppContext, cmdSpec *model.CallCmdSpec) []*CommandResult {

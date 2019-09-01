@@ -5,13 +5,13 @@ import (
 	"errors"
 	"math/big"
 
-	"github.com/AtlantPlatform/ethfw"
+	"github.com/ypapax/ethfw"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/rpc"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/AtlantPlatform/ethereum-playbook/model"
+	"github.com/ypapax/ethereum-playbook/model"
 )
 
 type Executor struct {

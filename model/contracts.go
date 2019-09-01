@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/AtlantPlatform/ethfw"
-	"github.com/AtlantPlatform/ethfw/sol"
+	"github.com/ypapax/ethfw"
+	"github.com/ypapax/ethfw/sol"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	log "github.com/sirupsen/logrus"

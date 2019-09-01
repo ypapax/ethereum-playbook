@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/AtlantPlatform/ethereum-playbook/model"
+	"github.com/ypapax/ethereum-playbook/model"
 )
 
 func (e *Executor) runViewCmd(ctx model.AppContext, cmdSpec *model.ViewCmdSpec) []*CommandResult {

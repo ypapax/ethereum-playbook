@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/AtlantPlatform/ethfw"
+	"github.com/ypapax/ethfw"
 	log "github.com/sirupsen/logrus"
 )
 

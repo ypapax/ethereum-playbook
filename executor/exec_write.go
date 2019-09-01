@@ -5,14 +5,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/AtlantPlatform/ethfw"
+	"github.com/ypapax/ethfw"
 	ethereum "github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/AtlantPlatform/ethereum-playbook/model"
+	"github.com/ypapax/ethereum-playbook/model"
 )
 
 func (e *Executor) runWriteCmd(ctx model.AppContext, cmdSpec *model.WriteCmdSpec) []*CommandResult {

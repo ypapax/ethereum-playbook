@@ -12,14 +12,14 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/AtlantPlatform/ethfw"
-	"github.com/AtlantPlatform/ethfw/sol"
+	"github.com/ypapax/ethfw"
+	"github.com/ypapax/ethfw/sol"
 	cli "github.com/jawher/mow.cli"
 	log "github.com/sirupsen/logrus"
 	yaml "github.com/xlab/yamlx"
 
-	"github.com/AtlantPlatform/ethereum-playbook/executor"
-	"github.com/AtlantPlatform/ethereum-playbook/model"
+	"github.com/ypapax/ethereum-playbook/executor"
+	"github.com/ypapax/ethereum-playbook/model"
 )
 
 var app = cli.App("ethereum-playbook", "Ethereum contracts deployment and management tool.")
