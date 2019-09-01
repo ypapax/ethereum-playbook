@@ -2,7 +2,7 @@ package executor
 
 import (
 	"bytes"
-	"errors"
+	"fmt"
 	"math/big"
 
 	"github.com/AtlantPlatform/ethfw"
@@ -27,7 +27,7 @@ func New(ctx model.AppContext, root *model.Spec) (*Executor, error) {
 	nodeGroup := ctx.NodeGroup()
 	ethRPC, ok := root.Inventory.GetClient(nodeGroup)
 	if !ok {
-		err := errors.New("no valid RPC client found in the inventory")
+		err := fmt.Errorf("no valid RPC client found in the inventory for nodeGroup %+v", nodeGroup)
 		return nil, err
 	}
 	executor := &Executor{
