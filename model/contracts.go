@@ -100,7 +100,8 @@ func (spec *ContractSpec) Validate(ctx AppContext, name string) bool {
 	src, ok := contracts[spec.Name]
 	if !ok {
 		validateLog.WithField("name", spec.Name).
-			Errorln("specified contract cannot be found in Solidity sources")
+			Errorf("specified contract cannot be found in Solidity sources, contracts: %+v, ctx.SpecDir(): %+v, spec.SolPath: %+v, spec.Optimize: %+v",
+				contracts, ctx.SpecDir(), spec.SolPath, spec.Optimize)
 		return false
 	}
 	spec.src = src
