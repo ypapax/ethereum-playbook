@@ -86,8 +86,9 @@ func (spec *ContractSpec) Validate(ctx AppContext, name string) bool {
 		allowedPaths = append(allowedPaths,
 			filepath.Join(ctx.SpecDir(), allowedRelative))
 	}
-	if !isFile(filepath.Join(ctx.SpecDir(), spec.SolPath)) {
-		validateLog.Errorln("sol file is not found or cannot be read")
+	file := filepath.Join(ctx.SpecDir(), spec.SolPath)
+	if !isFile(file) {
+		validateLog.Errorf("sol file is not found or cannot be read: %+v", file)
 		return false
 	}
 	compiler := ctx.SolcCompiler().SetAllowPaths(allowedPaths)
