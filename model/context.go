@@ -3,8 +3,8 @@ package model
 import (
 	"context"
 
-	"github.com/ypapax/ethfw"
-	"github.com/ypapax/ethfw/sol"
+	"github.com/AtlantPlatform/ethfw"
+	"github.com/AtlantPlatform/ethfw/sol"
 )
 
 type AppContext struct {

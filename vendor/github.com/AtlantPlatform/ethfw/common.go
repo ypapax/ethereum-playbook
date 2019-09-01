@@ -13,7 +13,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/rlp"
 
-	"github.com/ypapax/ethfw/sol"
+	"github.com/AtlantPlatform/ethfw/sol"
 )
 
 func ContractDeployBin(c *sol.Contract, params ...interface{}) ([]byte, error) {

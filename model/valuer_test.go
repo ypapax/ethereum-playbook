@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"testing"
 
-	"github.com/ypapax/ethfw"
+	"github.com/AtlantPlatform/ethfw"
 	"github.com/stretchr/testify/assert"
 )
 

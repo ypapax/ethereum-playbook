@@ -6,7 +6,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/ypapax/ethfw"
+	"github.com/AtlantPlatform/ethfw"
 )
 
 type Valuer string

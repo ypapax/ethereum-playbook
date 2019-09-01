@@ -12,8 +12,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/ypapax/ethfw"
-	"github.com/ypapax/ethfw/sol"
+	"github.com/AtlantPlatform/ethfw"
+	"github.com/AtlantPlatform/ethfw/sol"
 	cli "github.com/jawher/mow.cli"
 	log "github.com/sirupsen/logrus"
 	yaml "github.com/xlab/yamlx"
