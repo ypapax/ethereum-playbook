@@ -41,6 +41,8 @@ func init() {
 }
 
 func main() {
+	log.SetReportCaller(true)
+	log.SetLevel(log.TraceLevel)
 	flag.Parse()
 	spec, ok := loadSpec()
 	if !ok {

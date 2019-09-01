@@ -20,6 +20,7 @@ func (inventory Inventory) Validate(ctx AppContext, spec *Spec) bool {
 }
 
 func (inventory Inventory) GetClient(groupName string) (*rpc.Client, bool) {
+	log.Printf("inventory: %+v", inventory)
 	group, ok := inventory[groupName]
 	if !ok {
 		return nil, false
